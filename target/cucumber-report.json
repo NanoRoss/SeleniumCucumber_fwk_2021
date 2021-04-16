@@ -1,0 +1,296 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 5,
+        "name": "As a user i enter a search criteria in Google",
+        "description": "",
+        "id": "test-google-search-funcionality.;as-a-user-i-enter-a-search-criteria-in-google",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3961595200,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Iam on the google search page",
+            "match": {
+              "location": "GoogleHomeSteps.navigateToGoogle()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 202546700,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I enter the search criteria",
+            "match": {
+              "location": "GoogleHomeSteps.enterSearchCriteria()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1651618900,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Click in the search button",
+            "match": {
+              "location": "GoogleHomeSteps.clickSearchButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 122736000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "The result match the criteria",
+            "match": {
+              "location": "GoogleHomeSteps.validateResults()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Test"
+          },
+          {
+            "name": "@Smoke"
+          }
+        ]
+      }
+    ],
+    "name": "Test Google Search Funcionality.",
+    "description": "",
+    "id": "test-google-search-funcionality.",
+    "keyword": "Feature",
+    "uri": "src/test/resources/features/Google.feature",
+    "tags": [
+      {
+        "name": "@Test",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 5,
+        "name": "As a user i do an accion to validate Dropdowns.",
+        "description": "",
+        "id": "feature:-test-randoms-things.;as-a-user-i-do-an-accion-to-validate-dropdowns.",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2554760700,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Navigate To web with Dropdown",
+            "match": {
+              "location": "Randoms_Steps.navigate_To_web_with_Dropdown()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 127257300,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "select a specific value on Dropdown",
+            "match": {
+              "location": "Randoms_Steps.select_a_specific_value_on_Dropdown()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 44540700,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "The selected value is the expected value",
+            "match": {
+              "location": "Randoms_Steps.The_selected_value_is_the_expected_value()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Test"
+          },
+          {
+            "name": "@Smoke"
+          }
+        ]
+      },
+      {
+        "line": 18,
+        "name": "I want to validate that a city is present inside the list",
+        "description": "",
+        "id": "feature:-test-randoms-things.;i-want-to-validate-that-a-city-is-present-inside-the-list;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 436746100,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "i navigate to the list page",
+            "match": {
+              "location": "Randoms_Steps.i_navigate_to_the_list_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1677749300,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "i search New York in the list",
+            "match": {
+              "arguments": [
+                {
+                  "val": "New York",
+                  "offset": 9
+                }
+              ],
+              "location": "Randoms_Steps.i_search_the_list(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError: The Value does not exist\r\n\tat org.junit.Assert.fail(Assert.java:88)\r\n\tat org.junit.Assert.assertTrue(Assert.java:41)\r\n\tat stepDefinitions.Randoms_Steps.i_can_find_the_text_in_the_list(Randoms_Steps.java:54)\r\n\tat ✽.i can find Buffalo, Nueva York in the resoult list(src/test/resources/features/Randoms.feature:14)\r\n",
+              "duration": 227568800,
+              "status": "failed"
+            },
+            "line": 14,
+            "name": "i can find Buffalo, Nueva York in the resoult list",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Buffalo, Nueva York",
+                  "offset": 11
+                }
+              ],
+              "location": "Randoms_Steps.i_can_find_the_text_in_the_list(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Test"
+          },
+          {
+            "name": "@Regression"
+          }
+        ]
+      },
+      {
+        "line": 19,
+        "name": "I want to validate that a city is present inside the list",
+        "description": "",
+        "id": "feature:-test-randoms-things.;i-want-to-validate-that-a-city-is-present-inside-the-list;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 99474900,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "i navigate to the list page",
+            "match": {
+              "location": "Randoms_Steps.i_navigate_to_the_list_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1672311800,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "i search New York in the list",
+            "match": {
+              "arguments": [
+                {
+                  "val": "New York",
+                  "offset": 9
+                }
+              ],
+              "location": "Randoms_Steps.i_search_the_list(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError: The Value does not exist\r\n\tat org.junit.Assert.fail(Assert.java:88)\r\n\tat org.junit.Assert.assertTrue(Assert.java:41)\r\n\tat stepDefinitions.Randoms_Steps.i_can_find_the_text_in_the_list(Randoms_Steps.java:54)\r\n\tat ✽.i can find Siracusa, Nueva York in the resoult list(src/test/resources/features/Randoms.feature:14)\r\n",
+              "duration": 210031400,
+              "status": "failed"
+            },
+            "line": 14,
+            "name": "i can find Siracusa, Nueva York in the resoult list",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Siracusa, Nueva York",
+                  "offset": 11
+                }
+              ],
+              "location": "Randoms_Steps.i_can_find_the_text_in_the_list(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Test"
+          },
+          {
+            "name": "@Regression"
+          }
+        ]
+      }
+    ],
+    "name": "Feature: Test randoms things.",
+    "description": "",
+    "id": "feature:-test-randoms-things.",
+    "keyword": "Feature",
+    "uri": "src/test/resources/features/Randoms.feature",
+    "tags": [
+      {
+        "name": "@Test",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
