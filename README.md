@@ -16,4 +16,5 @@ I built it with diferent types of tools:
 -Hooks
 -Backgrounds
 -Scenarios Outline
+-Reports 
 ```
